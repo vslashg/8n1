@@ -10,7 +10,6 @@ cc_binary(
     deps = [":lua"],
 )
 
-
 cc_library(
     name = "lua",
     srcs = [
@@ -76,4 +75,5 @@ cc_library(
         "luaconf.h",
         "lualib.h",
     ],
+    defines = ["LUA_USE_LINUX"],
 )
